@@ -1,0 +1,21 @@
+Date,Region,Product,Category,Quantity,Unit_Price,Sales,Profit
+2025-01-01,North,Product A,Electronics,100,100,1000,200
+2025-01-02,South,Product B,Furniture,5,200,1000,150
+2025-01-03,East,Product C,Clothing,8,50,400,80
+2025-01-04,West,Product A,Electronics,15,100,1500,300
+2025-01-05,North,Product B,Furniture,3,200,600,90
+2025-01-06,South,Product C,Clothing,12,50,600,120
+2025-01-07,East,Product A,Electronics,9,100,900,180
+2025-01-08,West,Product B,Furniture,7,200,1400,210
+2025-01-09,North,Product C,Clothing,11,50,550,110
+2025-01-10,South,Product A,Electronics,6,100,600,120
+2025-01-11,East,Product B,Furniture,4,200,800,100
+2025-01-12,West,Product C,Clothing,10,50,500,90
+2025-01-13,North,Product A,Electronics,13,100,1300,260
+2025-01-14,South,Product B,Furniture,6,200,1200,180
+2025-01-15,East,Product C,Clothing,9,50,450,95
+2025-01-16,West,Product A,Electronics,14,100,1400,280
+2025-01-17,North,Product B,Furniture,2,200,400,60
+2025-01-18,South,Product C,Clothing,7,50,350,75
+2025-01-19,East,Product A,Electronics,11,100,1100,220
+2025-01-20,West,Product B,Furniture,5,200,1000,140
