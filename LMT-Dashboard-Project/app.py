@@ -8,7 +8,6 @@ import os
 UPLOAD_DIR = "uploaded_files"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-
 # -------------------------------------------------------------------
 # PAGE SETUP
 # -------------------------------------------------------------------
@@ -106,12 +105,12 @@ def load_file(upload_dir, filename):
 # -------------------------------------------------------------------
 def show_raw_data(df, label="📄 Show Raw Data (Original File)"):
     with st.expander(label):
-        st.dataframe(df.reset_index(drop=True), use_container_width=True)
+        st.dataframe(df.reset_index(drop=True), width='stretch')
 
 
 def show_filtered_data(df, label="🔍 Show Filtered Data"):
     with st.expander(label):
-        st.dataframe(df.reset_index(drop=True), use_container_width=True)
+        st.dataframe(df.reset_index(drop=True), width='stretch')
 
 
 # -------------------------------------------------------------------
@@ -208,7 +207,7 @@ def chart_section(df):
         x = st.selectbox("X-axis", all_cols, key="scatter_x")
         y = st.selectbox("Y-axis", numeric_cols, key="scatter_y")
         chart = alt.Chart(df).mark_circle(size=60).encode(x=x, y=y).interactive()
-        st.altair_chart(chart, use_container_width=True)
+        st.altair_chart(chart, width='stretch')
 
     with tab_pie:
         import plotly.express as px
@@ -216,7 +215,7 @@ def chart_section(df):
         if x in numeric_cols:
             st.error("Pie chart requires a categorical column.")
         else:
-            st.plotly_chart(px.pie(df, names=x), use_container_width=True)
+            st.plotly_chart(px.pie(df, names=x), width='stretch')
 
 
 # -------------------------------------------------------------------
@@ -224,7 +223,7 @@ def chart_section(df):
 # -------------------------------------------------------------------
 def main():
     setup_page(
-        page_title="📊 Dashboard Project",
+        page_title="Dashboard Project",
         page_icon="📊",
         layout="wide"
     )
