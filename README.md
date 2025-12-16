@@ -1,72 +1,67 @@
-📊 LMT-Dashboard-Project
+# 📊 LMT-Dashboard-Project
 
-A modular, scalable, and interactive Streamlit dashboard application for uploading, managing, filtering, and visualizing CSV and Excel datasets.
-The project follows a clean, parameterized, function-based architecture, making it easy to maintain, extend, and reuse in real-world analytics scenarios.
+A modular, scalable, and interactive **Streamlit dashboard application** for uploading, managing, filtering, and visualizing CSV and Excel datasets.  
+The project follows a **clean, parameterized, function-based architecture**, making it suitable for real-world analytics, learning, and teaching.
 
-🚀 Features
+---
 
-📁 Upload CSV and Excel files
+## 🚀 Features
 
-💾 Persist uploaded files locally for reuse
+- 📁 Upload CSV and Excel files  
+- 💾 Persist uploaded files locally for reuse  
+- 📂 Select and manage saved datasets  
+- 🗑️ Safe file deletion with confirmation  
+- 📅 Automatic date-based filtering  
+- 🔢 Numeric range filtering  
+- 🏷️ Categorical filtering  
+- 📊 Interactive visualizations:
+  - Line Chart  
+  - Bar Chart  
+  - Area Chart  
+  - Scatter Plot  
+  - Pie Chart  
+- 🧭 Tab-based chart navigation  
+- 📄 Expandable raw and filtered data views  
+- 🧠 Clean separation of UI, logic, and configuration  
 
-📂 Select and manage saved datasets
+---
 
-🗑️ Safe file deletion with confirmation
+## 🏗️ Project Structure
 
-📅 Automatic date-based filtering
-
-🔢 Numeric range filtering
-
-🏷️ Categorical filtering
-
-📊 Interactive visualizations:
-
-Line Chart
-
-Bar Chart
-
-Area Chart
-
-Scatter Plot
-
-Pie Chart
-
-🧭 Tab-based chart navigation
-
-📄 Expandable raw and filtered data views
-
-🧠 Clean separation of UI, logic, and configuration
-
-🏗️ Project Structure
 LMT-Dashboard-Project/
 │
-├── app.py                  # Main Streamlit application
-├── uploaded_files/          # Local storage for uploaded datasets
-├── requirements.txt         # Project dependencies
-└── README.md                # Project documentation
+├── app.py # Main Streamlit application
+├── uploaded_files/ # Local storage for uploaded datasets
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
 
-⚙️ Installation
-1️⃣ Clone the repository
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+```bash
 git clone https://github.com/<your-username>/LMT-Dashboard-Project.git
 cd LMT-Dashboard-Project
-
-2️⃣ Create and activate a virtual environment (recommended)
-python -m venv venv
-
+```
+2. Create and activate a virtual environment (recommended)
 
 Windows
 
+python -m venv venv
 venv\Scripts\activate
 
 
 macOS / Linux
 
+python3 -m venv venv
 source venv/bin/activate
 
-3️⃣ Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
-▶️ Running the Application
+▶️ Run the Application
 streamlit run app.py
 
 
@@ -76,13 +71,13 @@ The dashboard will open automatically in your browser.
 
 Python
 
-Streamlit – Web application framework
+Streamlit
 
-Pandas – Data processing and filtering
+Pandas
 
-Altair – Interactive scatter plots
+Altair
 
-Plotly – Pie charts and interactive visuals
+Plotly
 
 🧠 Design Philosophy
 
@@ -111,6 +106,6 @@ Portfolio projects for data analysts
 
 Uploaded files are stored locally in the uploaded_files/ directory.
 
-No external data is transmitted.
+No external data transmission is performed.
 
 Files can be safely removed using a confirmation-based delete mechanism.
